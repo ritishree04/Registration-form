@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    margin-left: 500px;
+    max-width: 300px;
+    margin-top: 100px;
+    border: yellowgreen;
+    background-color: wheat;
+
+    text-shadow: tomato;
+    font-weight: bold;
+    
+    
+
+}
+
+.ff{
+    color:red;
+    font-style: italic;
+    font-size: x-large;
+    
+
+}
+.b{
+    color:red;
+    box-shadow: yellowgreen;
+    background-color: yellow;
+    border-bottom: violet;
+    box-sizing: content-box;
+}

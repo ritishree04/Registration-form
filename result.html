@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>submitHere</title>
+     <h1>Student Information</h1>
+     <link rel="stylesheet" href="result.css">
+    <script type="text/javascript" src="result.js"></script>
+    </head>
+    <body class="container">
+        <div class="d1">
+        <h2>
+            Name: <span class="f" id='result-name' />
+        </h2>
+
+        <h2>
+            Surname: <span class="f" id='result-surname' />
+        </h2>
+
+        <h2>
+            Address: <span class="f" id='result-address' />
+        </h2>
+
+        <h2>
+            Email: <span class="f" id='result-email' />
+        </h2>
+
+        <h2>
+            Number: <span class="f" id='result-number' />
+        </h2>
+
+        <h2>
+            Country: <span class="f" id='result-country' />
+        </h2>
+
+        <h2>
+            Gender: <span class="f" id='result-gender' />
+        </h2>
+
+        <h2>
+            Education: <span class="f" id='result-education' />
+        </h2>
+
+        </div>
+
+        <div class="pic">
+            <div class="profile">
+           <img src="images/profile.jpg" id="upload-img">
+           </div>
+
+           <div class="custom-file">
+              <h2> <label for="fileupload">upload profile</label></h2>
+            <input class="f" type="file" id="fileupload">
+            </div>
+        </div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+
+    $(function(){
+        $("#fileupload").change(function(event){
+            var x = URL.createObjectURL(event.target.files[0]);
+            $("#upload-img").attr("src",x);
+            console.log(event);
+        });
+    })
+</script>
+
+
+    </body>
+    </html>
+
+
